@@ -1,0 +1,24 @@
+{
+  "name": "higuera",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masgro/higuera.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masgro/higuera/issues"
+  },
+  "homepage": "https://github.com/masgro/higuera#readme",
+  "dependencies": {
+    "serve": "^14.2.6"
+  }
+}
