@@ -5,6 +5,7 @@ const APP_ASSETS = [
   "./menu.html",
   "./login.html",
   "./admin.html",
+  "./calendar.html",
   "./styles.css",
   "./app.js",
   "./manifest.webmanifest",
