@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Menú | Higuera Cultural</title>
+    <meta name="description" content="Menú público de platos típicos argentinos de Higuera Cultural.">
+    <meta name="theme-color" content="#8f2f24">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Higuera Cultural">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="assets/icon-192.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="menu">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <span class="brand-mark">HC</span>
+        <span>Higuera Cultural</span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="calendar.html">Calendario</a>
+        <a class="active" href="menu.html">Menú</a>
+        <a href="login.html">Administrador</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-intro">
+        <p class="eyebrow">Menú de la casa</p>
+        <h1>Platos típicos argentinos para compartir.</h1>
+        <p>
+          La carta se actualiza desde la sección administrador. Los precios se muestran en
+          pesos argentinos.
+        </p>
+      </section>
+
+      <section class="menu-toolbar" aria-label="Filtros del menú">
+        <button class="chip active" type="button" data-filter="Todos">Todos</button>
+        <button class="chip" type="button" data-filter="Entradas">Entradas</button>
+        <button class="chip" type="button" data-filter="Principales">Principales</button>
+        <button class="chip" type="button" data-filter="Postres">Postres</button>
+        <button class="chip" type="button" data-filter="Bebidas">Bebidas</button>
+      </section>
+
+      <section>
+        <div id="menu-list" class="menu-grid" aria-live="polite"></div>
+        <p id="empty-menu" class="empty-state" hidden>No hay platos cargados para esta categoría.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Higuera Cultural · Menú sujeto a disponibilidad</p>
+    </footer>
+  </body>
+</html>

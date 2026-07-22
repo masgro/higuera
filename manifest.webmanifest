@@ -1,0 +1,25 @@
+{
+  "name": "Higuera Cultural",
+  "short_name": "Higuera",
+  "description": "Espacio cultural con comidas típicas argentinas.",
+  "start_url": "index.html",
+  "scope": ".",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "background_color": "#fbf7ef",
+  "theme_color": "#8f2f24",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

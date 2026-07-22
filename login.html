@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Acceso administrador | Higuera Cultural</title>
+    <meta name="description" content="Acceso protegido a la administración de Higuera Cultural.">
+    <meta name="theme-color" content="#8f2f24">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Higuera Cultural">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="assets/icon-192.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="login">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <span class="brand-mark">HC</span>
+        <span>Higuera Cultural</span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="calendar.html">Calendario</a>
+        <a href="menu.html">Menú</a>
+        <a class="active" href="login.html">Administrador</a>
+      </nav>
+    </header>
+
+    <main class="page-shell login-shell">
+      <section class="admin-panel login-panel">
+        <p class="eyebrow">Acceso restringido</p>
+        <h1>Administrador</h1>
+        <p>Ingresá la contraseña para editar platos, precios y disponibilidad.</p>
+        <form id="login-form" class="login-form">
+          <label>
+            Contraseña
+            <input id="admin-password" type="password" autocomplete="current-password" required>
+          </label>
+          <button class="button primary" type="submit">Ingresar</button>
+          <p id="login-error" class="form-error" role="alert" hidden>Contraseña incorrecta.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Higuera Cultural · Acceso administrador</p>
+    </footer>
+  </body>
+</html>

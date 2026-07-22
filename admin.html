@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Administrador | Higuera Cultural</title>
+    <meta name="description" content="Administración local del menú y precios de Higuera Cultural.">
+    <meta name="theme-color" content="#8f2f24">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Higuera Cultural">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="assets/icon-192.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="admin">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <span class="brand-mark">HC</span>
+        <span>Higuera Cultural</span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="calendar.html">Calendario</a>
+        <a href="menu.html">Menú</a>
+        <a class="active" href="admin.html">Administrador</a>
+      </nav>
+    </header>
+
+    <main class="page-shell admin-layout">
+      <section class="page-intro admin-intro">
+        <p class="eyebrow">Gestión del menú</p>
+        <h1>Editar platos y precios.</h1>
+        <p>
+          Los cambios se guardan en este navegador y se reflejan en la página Menú. Para un
+          sitio publicado con múltiples administradores convendría sumar autenticación y base
+          de datos.
+        </p>
+      </section>
+
+      <section class="admin-panel">
+        <form id="menu-form" class="menu-form">
+          <input id="item-id" type="hidden">
+          <label>
+            Plato
+            <input id="item-name" name="name" type="text" maxlength="80" required placeholder="Ej: Empanadas salteñas">
+          </label>
+          <label>
+            Categoría
+            <select id="item-category" name="category" required>
+              <option>Entradas</option>
+              <option>Principales</option>
+              <option>Postres</option>
+              <option>Bebidas</option>
+            </select>
+          </label>
+          <label>
+            Precio
+            <input id="item-price" name="price" type="number" min="0" step="100" required placeholder="6500">
+          </label>
+          <label class="toggle-field">
+            <input id="item-enabled" name="enabled" type="checkbox" checked>
+            <span>
+              Habilitado
+              <small>Visible en el menú público</small>
+            </span>
+          </label>
+          <label class="span-2">
+            Descripción
+            <textarea id="item-description" name="description" rows="3" maxlength="180" required placeholder="Descripción breve del plato"></textarea>
+          </label>
+          <div class="form-actions span-2">
+            <button class="button primary" type="submit">Guardar plato</button>
+            <button class="button secondary" id="cancel-edit" type="button">Cancelar edición</button>
+            <button class="button danger" id="reset-menu" type="button">Restaurar menú inicial</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="admin-panel">
+        <div class="table-header">
+          <h2>Menú cargado</h2>
+          <div class="table-tools">
+            <span id="admin-count" class="count"></span>
+            <button class="table-action" id="logout-admin" type="button">Salir</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Plato</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="admin-list"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Higuera Cultural · Administración local</p>
+    </footer>
+  </body>
+</html>

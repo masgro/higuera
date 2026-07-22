@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Menú | Higuera Cultural</title>
+    <meta name="description" content="Menú público de platos típicos argentinos de Higuera Cultural.">
+    <meta name="theme-color" content="#8f2f24">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Higuera Cultural">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="assets/icon-192.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="calendar">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <span class="brand-mark">HC</span>
+        <span>Higuera Cultural</span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a class="active" href="calendar.html">Calendario</a>
+        <a href="menu.html">Menú</a>
+        <a href="login.html">Administrador</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-intro">
+
+        <p class="eyebrow">Fechas disponibles</p>
+        <h1>Platos típicos argentinos para compartir.</h1>
+        <p>
+          La carta se actualiza desde la sección administrador. Los precios se muestran en
+          pesos argentinos.
+        </p>
+      </section>
+      <div class="responsive-calendar-box">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=America%2FArgentina%2FCordoba&showPrint=0&showTz=0&title&showTitle=0&showCalendars=0&src=b2JzZXJ2YW5kdW1AZ21haWwuY29t&src=dDJhMzNlbXMyYXNubjExMWRlaWQ4ZDdwcjRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=MjU1anYybjRzNDdqM2Fhb2NjYmdiZ3VnbWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZmFtaWx5MDY1MjYwMzgxNjk3NDc2MjcyOTlAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZXMuZnJlbmNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039be5&color=%23ad1457&color=%23009688&color=%23a79b8e&color=%237986cb&color=%23e4c441" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <script>
+      const element = document.querySelector("#yDmH0d > c-wiz > div > footer > div.JNpOJd")
+      element.classList.remove('old-style'); // Removes a class
+    </script>
+      </div>
+      </main>      
+    <footer class="footer">
+      <p>Higuera Cultural · Menú sujeto a disponibilidad</p>
+    </footer>
+  </body>
+</html>
